@@ -38,6 +38,7 @@ import MuiTimeline from "./components/MuiTimeline"
 import MuiMasonry from "./components/MuiMasonry"
 import MuiResponsiveness from "./components/MuiResponsiveness"
 import { createTheme, colors, ThemeProvider } from "@mui/material"
+import MuiCustomization from "./components/MuiCustomization"
 
 const theme = createTheme({
   status: {
@@ -50,6 +51,11 @@ const theme = createTheme({
     neutral: {
       main: colors.grey[500],
       darker: colors.grey[700]
+    }
+  },
+  transitions: {
+    duration: {
+      standard: 300
     }
   }
 });
@@ -95,7 +101,8 @@ function App() {
           {/* <MuiTabs /> */}
           {/* <MuiTimeline /> */}
           {/* <MuiMasonry /> */}
-          <MuiResponsiveness />
+          {/* <MuiResponsiveness /> */}
+          <MuiCustomization />
         </LocalizationProvider>
       </ThemeProvider>
     </>
